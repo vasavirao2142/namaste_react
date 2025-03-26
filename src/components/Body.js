@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import RestarauntCard from "./RestarauntCard";
 import { resList } from "../utils/mockData";
 
 const Body = () => {
 
-    const [restaurantList,setRestarauntlist]=useState(resList)
+    const [restaurantList,setRestarauntlist]=useState(resList);
 
+
+    useEffect(()=>{
+        console.log("UseEffect called")
+    },[])
+
+
+    console.log("outside the useEffect");
+    
     
     return (
         <div className="body-container">
