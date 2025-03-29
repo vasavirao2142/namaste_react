@@ -40,6 +40,7 @@
     padding: 5px;
     box-sizing: border-box;
     margin:5px;
+    word-wrap: break-word;
 }
 .card:hover{
     cursor: pointer;
@@ -49,9 +50,23 @@
 
 .res-logo{
     width:100%;
+    height: 150px;
     
 }
 .toprated-btn{
     margin:5px;
     padding:5px;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.shimmer-card{
+    background-color: #f0f0f0;
+    width:250px;
+    height:150px;
+    margin:10px;
 }
